@@ -24,7 +24,7 @@ public class CustomerMenu {
 
         Customer customer=new Customer();
         customer.setId(id);
-        customer.setFirstname(firstName);
+        customer.setFirstName(firstName);
         customer.setLastName(lastName);
         customer.setEmail(email);
         customer.setPassword(password);

@@ -23,11 +23,11 @@ public class Customer {
         this.id = id;
     }
 
-    public String getFirstname() {
+    public String getFirstName() {
         return firstName;
     }
 
-    public void setFirstname(String firstname) {
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
