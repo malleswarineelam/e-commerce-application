@@ -1,6 +1,7 @@
 
 import com.stschool.ecommerce.controller.CustomerController;
 import com.stschool.ecommerce.model.Customer;
+import com.stschool.ecommerce.service.CustomerService;
 import com.stschool.ecommerce.ui.CustomerMenu;
 
 import java.util.Scanner;
@@ -17,9 +18,17 @@ public class Main {
                 Customer customer= customerMenu.inputCustomerSignUpData();
                 CustomerController customerController=new CustomerController();
                 customerController.handleSignUp(customer);
+                CustomerService customerService=new CustomerService();
+                System.out.println("you have logged in successfully");
+                System.out.println("Displaying Customer Details");
+                customerService.displayCustomerDetails(customer);
                 break;
 
         }
+
+
+
+
 
 
 
