@@ -9,7 +9,7 @@ public class CustomerController {
         CustomerService customerService=new CustomerService();
        return customerService.handleSignUp(customer);
 
-       // return customer.getFirstname();
+      
 
     }
 }
