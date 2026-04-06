@@ -7,6 +7,7 @@ public class CustomerService {
 
     public Customer handleSignUp(Customer customer){
         System.out.println("Customer Service : "+ customer);
+
         CustomerRepository customerRepository=new CustomerRepository();
         return customerRepository.addNewCustomer(customer);
     }

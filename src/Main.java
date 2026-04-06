@@ -16,8 +16,10 @@ public class Main {
             case 1:
                 CustomerMenu customerMenu=new CustomerMenu();
                 Customer customer= customerMenu.inputCustomerSignUpData();
+
                 CustomerController customerController=new CustomerController();
                 customerController.handleSignUp(customer);
+
                 CustomerService customerService=new CustomerService();
                 System.out.println("you have logged in successfully");
                 System.out.println("Displaying Customer Details");
